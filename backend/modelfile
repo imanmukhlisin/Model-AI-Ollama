@@ -1,0 +1,10 @@
+FROM gemma:2b
+
+PARAMETER num_predict 256
+PARAMETER temperature 0.6
+PARAMETER top_p 0.8
+PARAMETER num_thread 6
+PARAMETER low_vram true
+PARAMETER num_ctx 2048
+
+SYSTEM "Kamu adalah asisten AI ringan yang menjawab cepat dan ringkas."

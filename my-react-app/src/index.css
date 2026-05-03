@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tambahan untuk animasi global */
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in;
+}
