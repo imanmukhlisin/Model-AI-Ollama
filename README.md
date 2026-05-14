@@ -1,6 +1,6 @@
 # 🤖 Model-AI-Ollama
 
-> Aplikasi Web Modern untuk Interaksi dengan Model AI Ollama dan Hugging Face
+> A Modern Web Application for Interacting with AI Models Using Ollama and Hugging Face
 
 ![React](https://img.shields.io/badge/React-19-blue?logo=react&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-66.6%25-yellow?logo=javascript&logoColor=white)
@@ -8,53 +8,53 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4-38B2AC?logo=tailwind-css&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-## 📋 Daftar Isi
+## 📋 Table of Contents
 
-- [Fitur Utama](#-fitur-utama)
+- [Key Features](#-key-features)
 - [Tech Stack](#-tech-stack)
-- [Instalasi](#-instalasi)
-- [Penggunaan](#-penggunaan)
-- [Struktur Project](#-struktur-project)
-- [Konfigurasi](#-konfigurasi)
-- [Kontribusi](#-kontribusi)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Project Structure](#-project-structure)
+- [Configuration](#-configuration)
+- [Contributing](#-contributing)
 
-## ✨ Fitur Utama
+## ✨ Key Features
 
-### 🎯 Integrasi AI Canggih
-- **Model Ollama**: Dukung model lokal dengan Ollama
-- **Hugging Face Inference**: Integrasi dengan model-model terkemuka dari Hugging Face
-- **Markdown Rendering**: Tampilkan output AI dengan formatting markdown yang elegan
-- **Chat Interface**: Interface percakapan yang responsif dan user-friendly
+### 🎯 Advanced AI Integration
+- **Ollama Models**: Support for local models using Ollama
+- **Hugging Face Inference**: Integration with leading models from Hugging Face
+- **Markdown Rendering**: Display AI output with elegant markdown formatting
+- **Chat Interface**: Responsive and user-friendly conversation interface
 
-### 📂 Pemrosesan File
-- **Upload Dokumen**: Dukung berbagai format file
-- **CSV Parser**: Parse file CSV dengan PapaParse
-- **Word Documents**: Ekstrak teks dari file Word menggunakan Mammoth
-- **Auto-resize Textarea**: Text input yang secara otomatis menyesuaikan ukuran
+### 📂 File Processing
+- **Document Upload**: Support for various file formats
+- **CSV Parser**: Parse CSV files with PapaParse
+- **Word Documents**: Extract text from Word documents using Mammoth
+- **Auto-resize Textarea**: Text input that automatically adjusts in size
 
-### 🎨 UI/UX Modern
-- **Tailwind CSS**: Styling modern dengan utility-first approach
-- **Responsive Design**: Bekerja sempurna di desktop, tablet, dan mobile
-- **Typography Plugin**: Plugin Tailwind untuk typography profesional
-- **Smooth Interactions**: Animasi dan transisi yang halus
+### 🎨 Modern UI/UX
+- **Tailwind CSS**: Modern styling with utility-first approach
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile
+- **Typography Plugin**: Tailwind plugin for professional typography
+- **Smooth Interactions**: Smooth animations and transitions
 
-### 🧪 Testing & Quality
-- **React Testing Library**: Testing utilities yang comprehensive
-- **Jest Integration**: Unit test dan integration test
-- **Web Vitals**: Monitoring performa aplikasi
+### 🧪 Testing & Quality Assurance
+- **React Testing Library**: Comprehensive testing utilities
+- **Jest Integration**: Unit tests and integration tests
+- **Web Vitals**: Application performance monitoring
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-- **React 19.2.0** - UI library modern
-- **React DOM 19.2.0** - React renderer untuk web
-- **Tailwind CSS 3.4.18** - Styling utility-first
-- **@tailwindcss/typography 0.5.19** - Plugin typography
-- **React Markdown 10.1.0** - Render markdown secara aman
+- **React 19.2.0** - Modern UI library
+- **React DOM 19.2.0** - React renderer for web
+- **Tailwind CSS 3.4.18** - Utility-first styling
+- **@tailwindcss/typography 0.5.19** - Typography plugin
+- **React Markdown 10.1.0** - Safe markdown rendering
 
 ### AI & ML
-- **@huggingface/inference 4.11.3** - SDK Hugging Face
-- **Ollama** - Model AI lokal
+- **@huggingface/inference 4.11.3** - Hugging Face SDK
+- **Ollama** - Local AI models
 
 ### File Processing
 - **Mammoth 1.11.0** - Parse Word documents
@@ -67,18 +67,18 @@
 - **Autoprefixer 10.4.21** - Browser prefix automation
 
 ### Testing
-- **@testing-library/react 16.3.0** - React testing utils
+- **@testing-library/react 16.3.0** - React testing utilities
 - **@testing-library/jest-dom 6.9.1** - Jest matchers
 - **@testing-library/user-event 13.5.0** - User interaction simulation
 
-## 🚀 Instalasi
+## 🚀 Installation
 
 ### Prerequisites
-- Node.js 16+ dan npm/yarn
-- Python 3.8+ (untuk backend yang sesuai)
-- Ollama (opsional, untuk model lokal)
+- Node.js 16+ and npm/yarn
+- Python 3.8+ (for compatible backend)
+- Ollama (optional, for local models)
 
-### Langkah-langkah
+### Steps
 
 1. **Clone Repository**
 ```bash
@@ -93,43 +93,43 @@ npm install
 ```
 
 3. **Setup Environment Variables**
-Buat file `.env.local` di direktori `my-react-app`:
+Create a `.env.local` file in the `my-react-app` directory:
 ```env
 # Hugging Face API
 REACT_APP_HF_TOKEN=your_hugging_face_token
 
-# Ollama Configuration (jika menggunakan)
+# Ollama Configuration (if using)
 REACT_APP_OLLAMA_BASE_URL=http://localhost:11434
 REACT_APP_OLLAMA_MODEL=llama2
 ```
 
-4. **Jalankan Development Server**
+4. **Run Development Server**
 ```bash
 npm start
 ```
-Aplikasi akan membuka di `http://localhost:3000`
+The application will open at `http://localhost:3000`
 
-## 💻 Penggunaan
+## 💻 Usage
 
-### Chatting dengan AI
-1. Ketik pesan Anda di textarea
-2. Pilih model AI (Ollama atau Hugging Face)
-3. Klik tombol "Send" atau tekan Ctrl+Enter
-4. Lihat respons yang ter-render dengan markdown
+### Chatting with AI
+1. Type your message in the textarea
+2. Select an AI model (Ollama or Hugging Face)
+3. Click the "Send" button or press Ctrl+Enter
+4. View the response rendered with markdown
 
-### Upload & Process File
-1. Klik tombol "Upload File"
-2. Pilih file (CSV, Word, atau text)
-3. Sistem akan memproses file secara otomatis
-4. Hasil akan ditampilkan di chat interface
+### Upload & Process Files
+1. Click the "Upload File" button
+2. Select a file (CSV, Word, or text)
+3. The system will automatically process the file
+4. Results will be displayed in the chat interface
 
-### Kustomisasi Model
-1. Buka settings
-2. Pilih model yang ingin digunakan
-3. Sesuaikan parameter seperti temperature, max_tokens
-4. Simpan konfigurasi
+### Customize Model
+1. Open settings
+2. Select the model you want to use
+3. Adjust parameters such as temperature, max_tokens
+4. Save the configuration
 
-## 📁 Struktur Project
+## 📁 Project Structure
 
 ```
 Model-AI-Ollama/
@@ -137,9 +137,9 @@ Model-AI-Ollama/
 │   ├── public/
 │   ├── src/
 │   │   ├── components/        # React components
-│   │   ├── pages/            # Page components
-│   │   ├── services/         # API services
-│   │   ├── utils/            # Utility functions
+│   │   ├── pages/             # Page components
+│   │   ├── services/          # API services
+│   │   ├── utils/             # Utility functions
 │   │   ├── App.jsx
 │   │   └── index.js
 │   ├── package.json
@@ -152,10 +152,10 @@ Model-AI-Ollama/
 └── README.md
 ```
 
-## ⚙️ Konfigurasi
+## ⚙️ Configuration
 
 ### Tailwind CSS
-File konfigurasi: `my-react-app/tailwind.config.js`
+Configuration file: `my-react-app/tailwind.config.js`
 ```javascript
 module.exports = {
   content: [
@@ -173,10 +173,10 @@ module.exports = {
 ```
 
 ### React Scripts
-Development dan production build dikonfigurasi melalui `package.json`:
+Development and production builds are configured through `package.json`:
 ```bash
 npm start      # Development server
-npm build      # Production build
+npm run build  # Production build
 npm test       # Run tests
 ```
 
@@ -190,7 +190,7 @@ const hf = new HfInference(process.env.REACT_APP_HF_TOKEN);
 
 const response = await hf.textGeneration({
   model: "gpt2",
-  inputs: "Halo, apa kabar?",
+  inputs: "Hello, how are you?",
   parameters: {
     max_new_tokens: 100,
   },
@@ -206,7 +206,7 @@ const response = await fetch(
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       model: process.env.REACT_APP_OLLAMA_MODEL,
-      prompt: "Halo, apa kabar?",
+      prompt: "Hello, how are you?",
       stream: false,
     }),
   }
@@ -220,20 +220,20 @@ const response = await fetch(
 npm test
 ```
 
-### Run Tests dengan Coverage
+### Run Tests with Coverage
 ```bash
 npm test -- --coverage
 ```
 
 ### Testing Best Practices
-- Gunakan React Testing Library untuk component testing
-- Test user interactions, bukan implementation details
+- Use React Testing Library for component testing
+- Test user interactions, not implementation details
 - Mock external API calls
 - Maintain 80%+ code coverage
 
 ## 📝 Markdown Rendering
 
-Aplikasi menggunakan `react-markdown` untuk rendering aman:
+The application uses `react-markdown` for safe rendering:
 ```javascript
 import ReactMarkdown from 'react-markdown';
 
@@ -253,16 +253,16 @@ import ReactMarkdown from 'react-markdown';
 
 ## 🚢 Deployment
 
-### Deploy ke Vercel
+### Deploy to Vercel
 ```bash
 npm install -g vercel
 vercel
 ```
 
-### Deploy ke Netlify
+### Deploy to Netlify
 ```bash
 npm run build
-# Drag and drop folder 'build' ke Netlify
+# Drag and drop the 'build' folder to Netlify
 ```
 
 ### Docker Deployment
@@ -277,25 +277,25 @@ EXPOSE 3000
 CMD ["npm", "start"]
 ```
 
-## 🤝 Kontribusi
+## 🤝 Contributing
 
-Kontribusi sangat kami hargai! Berikut cara berkontribusi:
+We greatly appreciate contributions! Here's how to contribute:
 
-1. Fork repository ini
-2. Buat branch fitur (`git checkout -b feature/AmazingFeature`)
-3. Commit perubahan Anda (`git commit -m 'Add some AmazingFeature'`)
-4. Push ke branch (`git push origin feature/AmazingFeature`)
-5. Buka Pull Request
+1. Fork this repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ### Development Guidelines
-- Ikuti coding style yang ada
-- Tambahkan tests untuk fitur baru
+- Follow the existing coding style
+- Add tests for new features
 - Update documentation
-- Follow commit message convention
+- Follow commit message conventions
 
-## 📄 Lisensi
+## 📄 License
 
-Project ini dilisensikan di bawah MIT License - lihat file [LICENSE](LICENSE) untuk detail.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
@@ -305,20 +305,20 @@ Project ini dilisensikan di bawah MIT License - lihat file [LICENSE](LICENSE) un
 
 ## 📞 Support & Feedback
 
-Jika Anda memiliki pertanyaan atau saran, silakan:
-- Buka [GitHub Issues](https://github.com/imanmukhlisin/Model-AI-Ollama/issues)
-- Kirim pull request dengan improvement
-- Diskusikan di GitHub Discussions
+If you have any questions or suggestions, please:
+- Open a [GitHub Issue](https://github.com/imanmukhlisin/Model-AI-Ollama/issues)
+- Submit a pull request with improvements
+- Start a discussion in [GitHub Discussions](https://github.com/imanmukhlisin/Model-AI-Ollama/discussions)
 
 ## 🙏 Acknowledgments
 
-- Terima kasih kepada komunitas React dan Tailwind CSS
-- Hugging Face untuk model dan inference API
-- Ollama untuk platform model lokal yang amazing
-- Semua contributors yang telah membantu project ini
+- Thanks to the React and Tailwind CSS community
+- Hugging Face for models and inference API
+- Ollama for the amazing local model platform
+- All contributors who have helped with this project
 
 ---
 
-**⭐ Jika project ini membantu Anda, jangan lupa beri bintang!**
+**⭐ If this project helps you, please don't forget to give it a star!**
 
-Dibuat dengan ❤️ oleh [Iman Mukhlisin](https://github.com/imanmukhlisin)
+Made with ❤️ by [Iman Mukhlisin](https://github.com/imanmukhlisin)
